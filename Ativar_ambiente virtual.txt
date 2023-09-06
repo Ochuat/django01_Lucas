@@ -1,0 +1,11 @@
+C:\001_Eng Software\Backend_Lucas\001_codico_django_app\primeiro_django>venv vgustavo
+'venv' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\001_Eng Software\Backend_Lucas\001_codico_django_app\primeiro_django>virtualenv vgustavo
+'virtualenv' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\001_Eng Software\Backend_Lucas\001_codico_django_app\primeiro_django>py -m venv vgus
+
+C:\001_Eng Software\Backend_Lucas\001_codico_django_app\primeiro_django>.\vgus\Scripts\activate

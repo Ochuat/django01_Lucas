@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt_br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresas com Data Science</title>
+  <link rel="stylesheet" href="{% static 'app1/css/css_index.css' %}">
+</head>
+
+<body>
+  <!--Comentário que pediram-->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">Sobre</a></li>
+      <li><a href="index.html">Contato</a></li>
+      <li><a href="index.html">Carreira</a></li>
+    </ul>
+  </nav>
+
+  <div class="principal">
+    <h1>Lugares para brincar com seu Doguinho</h1>
+
+    <div class="descricao">
+      <h2>PetPark</h2>
+      <hr>
+      <div class="card">
+        <img src="{% static "app1/imagens/PetPark.jpg" %}" alt="Foto do Pet Park no shopping catuai.">
+        <div>
+          <p>O maior e mais divertido espaço para pet da região está aqui: Pet Park! Localizado no estacionamento do
+            Shopping Catuaí, próximo ao acesso da Telhanorte, o parque conta com com área livre, com circuito de
+            agilidade, brinquedos e água filtrada e potável, para os seus pets brincarem e se divertirem muito.</p>
+          <p>HORÁRIO: Terça a Domingo, das 10h às 22h</p>
+          <p>PREÇO: <strong>Espaço gratuito</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="descricao">
+      <h2>Praça dos Pioneiros</h2>
+      <hr>
+      <div class="card">
+        <img src="{% static "app1/imagens/pioneiros.jpg" %}" alt="Foto do Pet Park no shopping catuai.">
+        <div>
+          <p>É uma enorme praça, no fundo da Gleba Palhano, atrás do Shopping Aurora. É repleta de belas árvores de
+            diferentes espécies, coqueiros, canteiros gramados, quadras de esportes. É toda revestida de pedrinhas
+            portuguesas; o diferencial é que ela é toda fechada com grade,, o que faz do espaço uma ótima opção para
+            passear com seu cão.</p>
+          <p>Endereço: R. Tereza Zanetti Lopes, 500 - Gleba Palhano, Londrina - PR</p>
+          <p><strong>Construção e manutenção:</strong> Plaenge</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="descricao">
+      <h2>Aterro do Igapó</h2>
+      <hr>
+      <div class="card">
+        <img src="{% static "app1/imagens/aterro.jpg" %}" alt="Foto do Pet Park no shopping catuai.">
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. </p>
+          <p>Rua Profº Joaquim de Matos Barreto</p>
+          <p><strong>Espaço público</strong></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer>
+    <p>Autor: Gustavo Serra</p>
+    <p id="link_contato"><a href="https://www.linkedin.com/in/gustavoserrabezerra">Contato</a></p>
+  </footer>
+
+</body>
+
+</html>
