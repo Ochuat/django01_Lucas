@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from . import forms
-from .forms import Formulario_RH
+from .forms import Formulario_RH, formulario_Auau
+from app1.models import Auau
 
 # Create your views here.
 def index(request):
@@ -31,4 +32,20 @@ def calculadora(request):
 
 def formulario_rh_view(request):
     formulario = forms.Formulario_RH()
+    if request.method == 'post':
+        formulario = forms.Formulario_RH(request.POST)
+        if formulario.is_valid():
+            print(f'Formulario validado pelo método POST')
     return render(request, 'templates01/formulario_rh.html', {'formulario': formulario})
+
+def form_auau(request):
+    formulario = formulario_Auau
+    if request.method == 'POST':
+        formulario = formulario_Auau(request.POST)
+        if formulario.is_valid():
+            formulario.save()
+        else:
+            print("Vish, deu errado")
+    return render(request, 'templates01/formulario_model_Auau.html', {'formulario_auau': formulario})
+
+
