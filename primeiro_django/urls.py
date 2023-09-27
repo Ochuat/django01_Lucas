@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from app1 import views
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,3 +29,9 @@ urlpatterns = [
     path('turismo/', include('app1.urls')),
     path('calculadora/', include('app1.urls'))
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        path('__debug__', include(debug_toolbar.urls))
+    ] + urlpatterns

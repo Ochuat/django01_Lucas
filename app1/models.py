@@ -18,3 +18,4 @@ class Tutor(models.Model):
 
     def __str__(self):
         return f'Tutor: {self.nome} | E-mail: {self.email}'
+
